@@ -9,8 +9,8 @@ struct Produto {
 };
 
 int main() {
-    struct Produto produtos[100]; // Array de structs para armazenar até 100 produtos
-    int num_produtos = 0;         // Contador para o número de produtos adicionados
+    struct Produto produtos[100]; // Array de structs para armazenar ate 100 produtos
+    int num_produtos = 0;         // Contador para o numero de produtos adicionados
 
     while (1) {
         int opcao;
@@ -55,9 +55,9 @@ int main() {
                 break;
             }
             case 2: {
-                // Listar todos os produtos não excluídos
+                // Listar todos os produtos não excluidos
                 for (int i = 0; i < num_produtos; i++) {
-                    if (produtos[i].codigo != -8) { // Ignora produtos excluídos
+                    if (produtos[i].codigo != -8) { // Ignora produtos excluidos
                         printf("Código: %d,Nome: %s,Preço: %.2lf,Estoque: %d\n\n", produtos[i].codigo, produtos[i].nome, produtos[i].preco, produtos[i].estoque);
                     }
                 }
